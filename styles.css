@@ -1,0 +1,38 @@
+
+:root{--max:1100px;--radius:12px}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Helvetica,Arial,sans-serif;margin:0;line-height:1.6}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee}
+.logo{font-weight:700;font-size:1.1rem;text-decoration:none;color:#000}
+.nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.nav a{padding:14px 8px;text-decoration:none;color:#333}
+.nav a.active{border-bottom:2px solid currentColor}
+.nav .cta{padding:10px 14px;border:1px solid #111;border-radius:8px}
+.hero{background:linear-gradient(180deg,#f7f7f7,#fff);padding:72px 0;border-bottom:1px solid #eee}
+.hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 12px}
+.hero-cta{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid #111;text-decoration:none;color:#111;background:#fff}
+.btn:hover{transform:translateY(-1px)}
+.btn-outline{display:inline-block;padding:12px 18px;border-radius:10px;border:1px dashed #222;text-decoration:none;color:#222;background:transparent}
+.features{padding:40px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{border:1px solid #eee;border-radius:var(--radius);padding:18px;background:#fff}
+.cta-strip{background:#0f0f0f;color:#fff;padding:28px 0;margin-top:20px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:28px 0}
+.footer-grid.small{padding:14px 0}
+.site-footer{border-top:1px solid #eee;background:#fafafa}
+.pad{padding:28px 0 60px}
+.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.price-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:16px}
+.price-card{border:1px solid #eee;border-radius:var(--radius);padding:18px;background:#fff}
+.price-card.featured{outline:2px solid #111}
+.contact-form{display:grid;gap:10px;max-width:600px}
+label{display:grid;gap:6px}
+input,textarea{padding:12px;border:1px solid #ddd;border-radius:10px;font:inherit}
+.alt-contact{margin-top:18px;color:#333}
+.muted{color:#666;font-size:.95rem}
+@media (max-width:700px){
+  .nav{gap:10px}
+  .nav .cta{padding:8px 10px}
+}
